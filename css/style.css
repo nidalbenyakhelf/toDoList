@@ -1,0 +1,161 @@
+/* ===== Reset أساسي ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5em;
+}
+.textBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 3em;
+    border-radius: 1em;
+    padding: .5em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333 3px 3px 0px 1px;
+}
+.textBox input,.textBox button{
+    height: 100%;
+    border: none;
+}
+.textBox button{
+    height: 100%;
+    width: 4em;
+    background-color:#fff;
+    cursor: pointer;
+}
+.textBox input{
+    width: 100%;
+    outline: none;
+    padding:0 .5em;
+}
+.textBox span{
+    display: none;
+    cursor: pointer;
+}
+.showBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    height:auto;
+    margin-top: 2em;
+    border-radius: 1em;
+    padding: .5em;
+    background-color: #ffffff00;
+}
+.showBox ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.showBox ul li{
+padding: .5em;
+border-radius: 1em;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+.showBox ul li:hover{
+background-color: rgba(0, 149, 255, 0.092);
+}
+#clearCheckbox{
+    display: none;
+}
+input:checked {
+    appearance: none; 
+    -webkit-appearance: none;
+    background-color: #b301ff;
+    color: #41ff01;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input:checked::after{
+    content: '✔';
+}
+#plusBtn{
+    position:fixed;
+    width: 3em;
+    height: 3em;
+    background-color: #60a2ffa9;
+    color:#016bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    bottom: 1em;
+    left: 1em;
+}
+.plusCart{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    width: 20em;
+    height: auto;
+    background-color: #ffffff;
+    color: #016bff;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    display: none;
+    transition: 2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+.plusCart .note{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .2em;
+    background-color:#ff38013b;
+    color:#ff3801;
+    border-radius: 1em;
+    padding-left: .5em;
+}
+
+
+
+#deleteBtn{
+    position:fixed;
+    width: 3em;
+    height: 3em;
+    background-color: #ff2b015d;
+    color:#ff2b01;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    bottom: 4.5em;
+    left: 1em;
+}
